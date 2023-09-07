@@ -1,12 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Camera from './components/Camera.vue'
+</script>
 
 <template>
-  <main>
-    <h1 className="text-3xl text-gray-50 font-bold underline">Hello world!</h1>
-    <el-button type="primary">Hello</el-button>
-  </main>
+  <suspense>
+    <main>
+      <h1>Nice to see you</h1>
+      <Camera />
+    </main>
+  </suspense>
 </template>
-
-<style lang="less">
-@import './assets/css/styles.less';
-</style>

@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
+import App from './App.vue'
+
+import '@renderer/assets/css/normalize.css'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-import App from './App.vue'
 
 const app = createApp(App)
 
