@@ -4,7 +4,7 @@ import { onMounted } from 'vue'
 
 onMounted(() => {
   const constraints = {
-    audio: true,
+    audio: false,
     video: true
   }
 
@@ -22,15 +22,10 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-main {
-  width: 100vw;
-  height: 100vh;
-
-  video {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+video {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 </style>

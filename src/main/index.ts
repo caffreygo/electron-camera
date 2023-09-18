@@ -8,6 +8,10 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 300,
     height: 300,
+    minWidth: 250,
+    minHeight: 250,
+    maxWidth: 500,
+    maxHeight: 500,
     x: 1400,
     y: 300,
     show: false,
@@ -20,6 +24,7 @@ function createWindow(): void {
     }
   })
 
+  mainWindow.setAspectRatio(1)
   mainWindow.webContents.openDevTools()
 
   mainWindow.on('ready-to-show', () => {
